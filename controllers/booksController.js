@@ -40,7 +40,7 @@ module.exports = {
 
     let config = {
       method: "get",
-      url: `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${process.env.API_KEY}&maxResults=10`,
+      url: `https://www.googleapis.com/books/v1/volumes?q=${query}`,
       headers: {}
     }
 
