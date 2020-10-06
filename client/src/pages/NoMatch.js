@@ -1,18 +1,23 @@
 import React from "react";
-import Header from "../components/Header";
+import { Col, Row, Container } from "../components/Grid";
+import Jumbotron from "../components/Jumbotron";
 
 function NoMatch() {
   return (
-    <div>
-          <Header>
+    <Container fluid>
+      <Row>
+        <Col size="md-12">
+          <Jumbotron>
             <h1>404 Page Not Found</h1>
             <h1>
               <span role="img" aria-label="Face With Rolling Eyes Emoji">
                 🙄
               </span>
             </h1>
-          </Header>
-    </div>
+          </Jumbotron>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
