@@ -18,7 +18,7 @@ function Search() {
   }, [])
 
   function loadBooks() {
-    API.searchTitle("The Batman")
+    API.searchTitle("")
       .then(res => {
         console.log(res.data.items)
         setBooks(res.data.items)
