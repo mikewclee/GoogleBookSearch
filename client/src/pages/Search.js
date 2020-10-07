@@ -77,7 +77,6 @@ function Search() {
             <Input
               onChange={handleInputChange}
               name="search"
-              height="30px"
               placeholder="Search book title ..."
             />
             <FormBtn
