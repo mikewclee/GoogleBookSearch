@@ -34,22 +34,23 @@ module.exports = {
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
-  },
-  search: function (req, res) {
-    let query = req.params.title
-
-    let config = {
-      method: "get",
-      url: `https://www.googleapis.com/books/v1/volumes?q=${query}`,
-      headers: {}
-    }
-
-    axios(config)
-      .then(response => {
-        res.json(response.data)
-      })
-      .catch(err => {
-        res.json(err.message);
-      })  
   }
+
+  // search: function (req, res) {
+  //   let query = req.params.title
+
+  //   let config = {
+  //     method: "get",
+  //     url: `https://www.googleapis.com/books/v1/volumes?q=${query}`,
+  //     headers: {}
+  //   }
+
+  //   axios(config)
+  //     .then(response => {
+  //       res.json(response.data)
+  //     })
+  //     .catch(err => {
+  //       res.json(err.message);
+  //     })  
+  // }
 };

@@ -13,8 +13,4 @@ router
   .put(booksController.update)
   .delete(booksController.remove);
 
-router
-  .route(`/search/:title`)
-  .get(booksController.search)
-
 module.exports = router;
